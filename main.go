@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/mitchellh/go-wordwrap"
 	"io"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
+
+	"github.com/mitchellh/go-wordwrap"
 )
 
 const (
