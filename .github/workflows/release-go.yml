@@ -38,5 +38,5 @@ jobs:
         ls pkg/
         echo "========================================================="
         go get -u github.com/tcnksm/ghr
-        $GOPATH/bin/ghr -n ${TAGNAME} -b "ʕ◔ϖ◔ʔ Release ${TAGNAME}" -draft ${TAGNAME} pkg/
+        $GOPATH/bin/ghr -n ${TAGNAME} -b "Release ${TAGNAME}" -draft ${TAGNAME} pkg/
 
