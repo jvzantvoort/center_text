@@ -28,7 +28,7 @@ build: main.go  ## Build a binary.
 cross: main.go  ## Build binaries for cross platform.
 	mkdir -p pkg
 	@# darwin
-	@for arch in "amd64" "386"; do \
+	@for arch in "amd64"; do \
 		GOOS=darwin GOARCH=$${arch} make build; \
 		zip pkg/center_text_$(VERSION)_darwin_$${arch}.zip center_text; \
 	done;
